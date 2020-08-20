@@ -1,0 +1,394 @@
+/* ---------------------------------------*/
+/* PAGE SETUP
+/* ---------------------------------------*/
+
+/* color theme #e67e22 */
+
+/*
+<i class="fas fa-code"></i> front end
+<i class="fas fa-terminal"></i> back end
+<i class="fas fa-graduation-cap"></i> education
+<i class="fas fa-user-tie"></i> business
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body  {
+  font-family: 'Lato', sans-serif;
+  color: #555;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* ---------------------------------------*/
+/* HEADER SETUP
+/* ---------------------------------------*/
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/emile-perron-190221-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+
+.home-nav {
+  float: right;
+  list-style: none;
+  margin-top: 50px;
+  margin-right: 100px;
+}
+
+.home-nav li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.home-nav li a:link,
+.home-nav li a:visited {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.5s;
+  padding: 8px 0;
+}
+
+.home-nav li a:hover,
+.home-nav li a:active {
+  border-bottom: 2px solid #e67e22;
+}
+
+.hero-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 240%;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+}
+
+
+/* ---------------------------------------*/
+/* BUTTONS
+/* ---------------------------------------*/
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  background-color: #e67e22;
+  border: 2px solid #e67e22;
+  color: white;
+  margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+  border: 2px solid #e67e22;
+  color: #e67e22;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #cf6d17;
+  color: white;
+  transition-delay: .2s;
+}
+
+/* ---------------------------------------*/
+/* SECTION  - ABOUT ME
+/* ---------------------------------------*/
+
+section {
+  padding: 80px 0;
+
+}
+
+h2 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: #e67e22;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.long-copy {
+  line-height: 140%;
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 50px;
+}
+
+.section-about .long-copy {
+  margin-bottom: 60px;
+}
+
+.box {
+  padding: 1%;
+  text-align: center;
+}
+
+.box p {
+  font-size: 90%;
+  line-height: 140%;
+}
+
+h3 {
+  font-size: 110%;
+  margin-bottom: 15px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.icon-about {
+  font-size: 225%;
+  display: block;
+  color: #e67e22;
+  margin-bottom: 10px;
+}
+
+/* ---------------------------------------*/
+/* SECTION  - PROJECTS
+/* ---------------------------------------*/
+
+.clearfix {zoom: 1}
+.clearfix:after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+.section-project-photos {
+  padding: 0px;
+
+}
+
+.project-description {
+  background-color: #f4f4f4;
+
+}
+
+.project-showcase {
+  list-style: none;
+  width: 100%;
+
+}
+
+.project-showcase li {
+  display: block; 
+  float: left;
+  width: 25%;
+}
+
+.project-photo {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: black;
+}
+
+.project-photo img {
+  width: 100%;
+  height: auto;
+  transform: scale(1.03);
+  transition: transform 0.5s, opacity 0.5s;
+  opacity: 0.7;
+}
+
+.project-photo img:hover {
+  transform: scale(1.25);
+  opacity: 1;
+}
+
+.box p {
+  margin-top: 25px;
+}
+
+.box h3 {
+  margin-top: 12px;
+  margin-bottom: 25px;
+}
+
+
+/* ---------------------------------------*/
+/* PROJECT - ICONS
+/* ---------------------------------------*/
+
+.fa-html5 {
+  font-size: 140%;
+}
+
+.fa-html5:hover {
+  color: #e34f26;
+  transition-delay: .2s;
+}
+
+.fa-css3-alt {
+  font-size: 140%;
+}
+
+.fa-css3-alt:hover {
+  color: #264de4;
+  transition-delay: .2s;
+}
+
+.fa-js-square {
+  font-size: 140%;
+}
+
+.fa-js-square:hover {
+  color: #F0DB4F;
+  transition-delay: .2s;
+
+}
+
+.fa-vuejs {
+  font-size: 140%;
+}
+
+.fa-vuejs:hover {
+  color: #42b883;
+  transition-delay: .2s;
+
+}
+
+.fa-node {
+  font-size: 140%;
+}
+
+.fa-node:hover {
+  color: #215732;
+  transition-delay: .2s;
+}
+
+.fa-github {
+  font-size: 140%;
+  color: #555;
+}
+
+.fa-github:hover {
+  color: #4078c0;
+  transition-delay: .2s;
+}
+
+.fa-linkedin {
+  font-size: 200%;
+  color: #555;
+}
+.fa-linkedin:hover {
+  color: #0077B5;
+  transition-delay: .2s;
+}
+
+.fa-file {
+  font-size: 200%;
+  color: #555;
+}
+.fa-file:hover {
+  color: #e67e22;
+  transition-delay: .2s;
+}
+
+.fa-facebook-square {
+  font-size: 200%;
+  color: #555;
+}
+.fa-facebook-square:hover {
+  color: #3C5A99;
+  transition-delay: .2s;
+}
+
+
+/* ---------------------------------------*/
+/* FOOTER
+/* ---------------------------------------*/
+
+footer {
+  background-color: #333;
+  padding: 25px;
+}
+
+.footer-nav {
+  list-style: none;
+  float: left;
+}
+
+.footer-nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited {
+  text-decoration: none;
+  border: 0;
+  color: #888;
+  transition-delay: 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+  color: #ddd;
+}
+
+footer p {
+  text-align: center;
+  color: #888;
+  font-size: 90%;
+  margin-top: 30px;
+}
+
+
+
+
+
+
+
+
